@@ -1,6 +1,7 @@
-var swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   spaceBetween: 55,
+  SimulateTouch: true,
   breakpoints: {
   // 768px以上の場合
     320 :{
@@ -19,7 +20,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     1800 :{
       slidesPerView: 3,
-    }
+    },
   },
   loop: true,
   navigation: {
@@ -29,5 +30,4 @@ var swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 5000,
   },
-  SimulateTouch: true
 });
