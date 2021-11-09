@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   spaceBetween: 55,
   SimulateTouch: true,
@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper-container', {
     },
     1800 :{
       slidesPerView: 3,
-    },
+    }
   },
   loop: true,
   navigation: {
