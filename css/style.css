@@ -104,6 +104,12 @@ body {
   color: #333333;
 }
 
+@media (max-width: 767px) {
+  .logo-text {
+    margin-right: 25px;
+  }
+}
+
 .btn-cta {
   padding-top: 5px;
 }
@@ -135,8 +141,8 @@ button {
   top: 32px;
   right: 16px;
   z-index: 15;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 
 .btn-line {
@@ -164,9 +170,23 @@ button {
           transform: translateY(-16px);
 }
 
+@media (max-width: 767px) {
+  .btn-line::before {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
 .btn-line::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
+}
+
+@media (max-width: 767px) {
+  .btn-line::after {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
 }
 
 .btn-line.open {
@@ -249,6 +269,14 @@ button {
 @media (min-width: 1024px) {
   .btn__header {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn__header {
+    top: 44px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -481,6 +509,8 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
@@ -492,8 +522,8 @@ button {
 
 @media (max-width: 767px) {
   .media__img-wrapper {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -510,7 +540,8 @@ button {
 
 @media (max-width: 767px) {
   .media__body {
-    margin-left: none;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 20px;
   }
 }
@@ -541,6 +572,8 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -550,6 +583,13 @@ button {
 
 .media--reverse .media__body {
   margin-right: 12.5%;
+}
+
+@media (max-width: 767px) {
+  .media--reverse .media__body {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .price {
@@ -1040,6 +1080,8 @@ button {
 
 .footer .footer__policy {
   padding-bottom: 54px;
+  padding-right: 15px;
+  padding-left: 15px;
   font-size: 1em;
   font-weight: bold;
 }
