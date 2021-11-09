@@ -882,6 +882,10 @@ button {
   & .btn-secondary{
     @include btn-secondary;
     margin-left: 32px;
+
+    @include sp{
+      margin-left:20px;
+    }
   }
   
 

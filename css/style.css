@@ -976,6 +976,12 @@ button {
   margin-left: 32px;
 }
 
+@media (max-width: 767px) {
+  .cta .btn-secondary {
+    margin-left: 20px;
+  }
+}
+
 .cta-area__text {
   padding-bottom: 40px;
   padding-top: 23px;
