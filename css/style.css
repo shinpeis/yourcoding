@@ -484,6 +484,7 @@ button {
   text-align: center;
   font-size: 2.25em;
   font-weight: bold;
+  line-height: 1.343;
   padding-top: 57px;
   padding-bottom: 0.80em;
 }
@@ -787,6 +788,7 @@ button {
 
 .accordion__text {
   font-size: .825em;
+  font-weight: bold;
   line-height: 1.85;
 }
 
@@ -865,6 +867,7 @@ button {
 
 .card--time {
   text-align: right;
+  font-weight: bold;
   padding-right: 36px;
   padding-bottom: 11px;
   position: absolute;
@@ -924,15 +927,16 @@ button {
   width: 100%;
   padding-top: 20px;
   padding-left: 18px;
+  padding-right: 5px;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .swiper__title {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }
 
@@ -1114,6 +1118,14 @@ button {
   font-size: 1em;
   font-weight: bold;
   padding-left: 68px;
+}
+
+@media (max-width: 767px) {
+  .footer .footer__policy-text {
+    display: inline-block;
+    text-align: right;
+    padding-left: 0;
+  }
 }
 
 .footer .copy-right {

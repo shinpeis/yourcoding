@@ -454,6 +454,7 @@ button {
   text-align: center;
   font-size: 2.25em;
   font-weight: bold;
+  line-height: 1.343;
   padding-top: 57px;
   padding-bottom: 0.80em;
 }
@@ -698,12 +699,6 @@ button {
   background-color: #F2F2F2;
   border: 1px solid #E5E5E5;
   margin: 0 auto;
-
-  // @include sp{
-  //   // width: 80%;
-  //   padding-right: 25px;
-  //   padding-left: 30px;
-  // }
 }
 
 .accordion__body > *:last-child{
@@ -716,6 +711,7 @@ button {
 
 .accordion__text{
   font-size: .825em;
+  font-weight: bold;
   line-height: 1.85;
 }
 
@@ -777,6 +773,7 @@ button {
 
 .card--time{
   text-align: right;  
+  font-weight: bold;
   padding-right: 36px;
   padding-bottom: 11px;
   position: absolute;
@@ -802,8 +799,7 @@ button {
     width: 21.684%;
     border: 1px solid #DDDDDD;
     border-radius: .25rem;    
-  } 
-  
+  }   
   
   @include sp{
     width:75%
@@ -831,13 +827,14 @@ button {
   width: 100%;
   padding-top: 20px;
   padding-left: 18px;
+  padding-right: 5px;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
 
-@include sp{
-  padding-right: 15px;
-  padding-left: 15px;
+@include tab{
+  padding-right: 14px;
+  padding-left: 14px;
 }
 }
 
@@ -995,6 +992,11 @@ button {
       font-size: 1em;
       font-weight: bold;
       padding-left: 68px;
+      @include sp{
+        display: inline-block;
+        text-align: right;
+        padding-left: 0;
+      }      
     }
   }
   & .copy-right{
