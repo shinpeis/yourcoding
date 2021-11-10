@@ -290,8 +290,7 @@ button {
   height: 690px;
   padding-top: 94px;
   background:none;
-  overflow-x: hidden;
-  overflow-y: clip;
+  
   @include tab{
     background: url(../img/backgroundimg-1.jpg); 
     background-size: cover;
@@ -308,8 +307,6 @@ button {
     padding-left:25px;
     height: 900px;
   }
-
-
 
   &__inner{
     width: 43%;
@@ -356,22 +353,20 @@ button {
 
   &__img{
     flex:0.8;
-    // margin-right: -10%;
     overflow-y: hidden;
-    overflow-x: clip;
+    overflow-x: hidden;
     position: relative;
     @include tab {
       position: static;
-      // width: 100%;
       padding-top: 100px;
-      overflow-x: clip;
+      overflow-x: hidden;
       text-align: center;
     }
     @include sp{
       padding-top: 10px;
       width: 80%;
       margin-right: auto;
-      margin-left: auto;      
+      margin-left: auto;
     }
   }
 }

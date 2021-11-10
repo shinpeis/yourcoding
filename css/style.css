@@ -292,8 +292,6 @@ button {
   height: 690px;
   padding-top: 94px;
   background: none;
-  overflow-x: hidden;
-  overflow-y: clip;
 }
 
 @media (max-width: 1024px) {
@@ -379,7 +377,7 @@ button {
       -ms-flex: 0.8;
           flex: 0.8;
   overflow-y: hidden;
-  overflow-x: clip;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -387,7 +385,7 @@ button {
   .mainview__img {
     position: static;
     padding-top: 100px;
-    overflow-x: clip;
+    overflow-x: hidden;
     text-align: center;
   }
 }
