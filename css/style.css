@@ -588,6 +588,13 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 767px) {
+  .media--reverse .media__wrapper .media__img-wrapper {
     margin-right: auto;
     margin-left: auto;
   }
