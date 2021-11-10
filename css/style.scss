@@ -296,16 +296,17 @@ button {
     background: url(../img/backgroundimg-1.jpg); 
     background-size: cover;
     background-position: center;
-    height: 1100px;
-    flex-direction: column;
-    justify-content: center;
+    height: 900px;
+    padding-top: 110px;
     margin-bottom: 50px;
   }
   @include sp{
-    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
     padding-right:25px;
     padding-left:25px;
-    height: 1020px;
+    height: 750px;
   }
 
 
@@ -314,7 +315,7 @@ button {
     width: 43%;
     max-width: 495px;
     padding-left:9.62%;
-    @include tab {
+    @include sp {
       width:100%;
       margin-right: auto;
       margin-left: auto;
@@ -332,6 +333,9 @@ button {
     @include tab {
       & br{
         display: none;
+      }
+      @include sp{
+        padding-top: 120px;
       }
     }
   }
@@ -352,15 +356,22 @@ button {
 
   &__img{
     flex:0.8;
-    margin-right: -10%;
+    // margin-right: -10%;
     overflow-y: hidden;
     overflow-x: clip;
     position: relative;
     @include tab {
       position: static;
-      width: 100%;
+      // width: 100%;
+      padding-top: 100px;
       overflow-x: clip;
       text-align: center;
+    }
+    @include sp{
+      padding-top: 10px;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;      
     }
   }
 }
@@ -823,6 +834,11 @@ button {
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
+
+@include sp{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 }
 
 .swiper__text{
@@ -892,7 +908,9 @@ button {
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);  
   
         @include sp{
-        padding: 36px 25px
+        padding: 36px 25px;
+        margin-right: 8%;
+        margin-left: 8%;
         }
       }
   }

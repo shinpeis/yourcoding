@@ -301,7 +301,14 @@ button {
     background: url(../img/backgroundimg-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 1100px;
+    height: 900px;
+    padding-top: 110px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainview {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -309,16 +316,10 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .mainview {
-    padding-top: 0;
+    padding-top: 20px;
     padding-right: 25px;
     padding-left: 25px;
-    height: 1020px;
+    height: 750px;
   }
 }
 
@@ -328,7 +329,7 @@ button {
   padding-left: 9.62%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .mainview__inner {
     width: 100%;
     margin-right: auto;
@@ -353,6 +354,12 @@ button {
   }
 }
 
+@media (max-width: 1024px) and (max-width: 767px) {
+  .mainview__title {
+    padding-top: 120px;
+  }
+}
+
 .mainview__text {
   padding-top: 53px;
   padding-bottom: 55px;
@@ -371,7 +378,6 @@ button {
   -webkit-box-flex: 0.8;
       -ms-flex: 0.8;
           flex: 0.8;
-  margin-right: -10%;
   overflow-y: hidden;
   overflow-x: clip;
   position: relative;
@@ -380,9 +386,18 @@ button {
 @media (max-width: 1024px) {
   .mainview__img {
     position: static;
-    width: 100%;
+    padding-top: 100px;
     overflow-x: clip;
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainview__img {
+    padding-top: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -914,6 +929,13 @@ button {
   line-height: 1.5;
 }
 
+@media (max-width: 767px) {
+  .swiper__title {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .swiper__text {
   padding-top: 35px;
   padding-left: 18px;
@@ -990,6 +1012,8 @@ button {
 @media (max-width: 767px) {
   .cta-area__wrapper {
     padding: 36px 25px;
+    margin-right: 8%;
+    margin-left: 8%;
   }
 }
 
