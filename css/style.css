@@ -647,6 +647,7 @@ button {
 
 .horizontal-table {
   border: 1px solid #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .horizontal-table__inner {
@@ -661,10 +662,17 @@ button {
   width: 35%;
   text-align: left;
   border-bottom: 1px solid #E5E5E5;
-  padding: 19px 37px;
+  border-right: 1px solid #E5E5E5;
+  padding: 37px 19px;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+  .horizontal-table__header {
+    padding: 19px 37px;
+  }
 }
 
 .horizontal-table__text {
@@ -703,12 +711,20 @@ button {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
+  line-height: 1.625;
+}
+
+.footnote br {
+  display: none;
 }
 
 @media (max-width: 767px) {
   .footnote {
     padding-right: 25px;
     padding-left: 25px;
+  }
+  .footnote br {
+    display: block;
   }
 }
 
@@ -739,6 +755,7 @@ button {
   border: 1px solid #E5E5E5;
   font-size: .875em;
   font-weight: bold;
+  line-height: 1.857;
   cursor: pointer;
   -webkit-transition: .25s;
   transition: .25s;
