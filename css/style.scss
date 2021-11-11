@@ -38,9 +38,10 @@ $pc:1024px; // タブレット
   margin-right: auto;
   transition: 0.3s;
   font-weight: bold;
-  background: linear-gradient(to right, #FA41CC 50%, #6020B0);
+  background: linear-gradient(to right, #FA41CC 0%, #6020B0 100%);
   color: white;
   font-size:0.875rem;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -408,17 +409,16 @@ button {
   } 
 }
 
-.mainview__img-background{
-  
-  @include tab {
-    
-  }  
-}
 
 @media (min-width:1500px) {
   .mainview{
     justify-content: space-between;
     max-width: 2100px;
+  }
+  .mainview__title{
+    br{
+      display: none;
+    }
   }
   .mainview__inner {
     width: 38%;
@@ -491,10 +491,18 @@ button {
       margin-right: auto;
       margin-left: auto;
     }
+    @media (min-width:1500px) {
+      flex:1;
+      margin-right: auto;
+      margin-left: 6.25%;
+    }
   }
-
+  
   &__img{
     width:100%;
+    @media (min-width:1500px) {
+      max-width: 75%;
+    }
   }
   
   &__body{
@@ -556,7 +564,7 @@ button {
 
 .price__wrapper{
   width: 68%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin:0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);  
 }
@@ -573,6 +581,7 @@ button {
 
   &__header{
     width:35%;
+    text-align: left;
     border-bottom: 1px solid #E5E5E5;
     padding:19px 37px;
     font-size: 1em;
@@ -718,12 +727,13 @@ button {
 }
 
 .blog{
-  @include primary-bgcolor;
+  @include primary-bgcolor;  
 }
 
 .cards{
   display: flex;
   flex-wrap: wrap;
+  
   @include sp{
     flex-direction: column;
   }
@@ -743,7 +753,7 @@ button {
     cursor: pointer;
 
     @include sp{
-      width: 100%;
+      width: auto;
       margin-right: 2%;
       margin-left: 2%;
       margin-bottom: 40px;
@@ -810,7 +820,7 @@ button {
 
 .swiper-container{
   width:100%;
-  max-width: 1800px;
+  max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
   overflow:hidden;
@@ -960,9 +970,10 @@ button {
 
 .submit-btn{
   border: none;
-  padding-top: 8px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .end-message {
