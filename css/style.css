@@ -672,6 +672,7 @@ button {
 @media (max-width: 767px) {
   .horizontal-table__header {
     padding: 19px 37px;
+    border-right: none;
   }
 }
 

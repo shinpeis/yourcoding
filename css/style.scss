@@ -591,6 +591,7 @@ button {
     line-height: 1.75;
     @include sp{
       padding: 19px 37px;
+      border-right: none;
     }
   }
 
