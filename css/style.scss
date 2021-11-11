@@ -629,18 +629,11 @@ button {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
-  line-height: 1.625;
-
-  & br{
-    display: none;
-  }
+  line-height: 1.625;  
 
   @include sp{
-    padding-right: 25px;
-    padding-left: 25px;
-    & br{
-      display: block;
-    }
+    padding-right: 50px;
+    padding-left: 50px;    
   }
 }
 
