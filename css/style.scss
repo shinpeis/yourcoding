@@ -112,6 +112,7 @@ $pc:1024px; // タブレット
 
 .header-nav__item{
   margin-right: 46px;
+  
   &:last-child{
     margin-right:193px;
   }
@@ -119,7 +120,12 @@ $pc:1024px; // タブレット
   & a{
     text-decoration: none;
     color:#333333;
+    color: rgba(0, 0, 0, 0.55);
     font-weight: bold;
+    transition: 0.5s;
+    &:hover{
+      color: #333333;
+    }
   }
 }
 
@@ -139,8 +145,9 @@ $pc:1024px; // タブレット
   font-size:1.5rem;
   font-weight: bold;
   vertical-align: 15px;
-  color:#333333;
-
+  color: #333333;
+  
+  
   @include sp{
     margin-right: 25px;
   }
@@ -249,10 +256,8 @@ button {
       font-weight: bold;
       width: 100%;
       height: auto;
-      padding: 50px;
-      
+      padding: 50px;      
     }
-
     
     &:hover{
       background-color: #EEFBFB;

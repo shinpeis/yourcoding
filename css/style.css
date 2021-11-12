@@ -83,7 +83,14 @@ body {
 .header-nav__item a {
   text-decoration: none;
   color: #333333;
+  color: rgba(0, 0, 0, 0.55);
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-nav__item a:hover {
+  color: #333333;
 }
 
 .logo {
